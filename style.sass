@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&family=Rubik+Doodle+Shadow&display=swap')
+
+$color-1: #6b9080ff
+$color-2: #a4c3b2ff
+$color-3: #cce3deff
+$color-4: #eaf4f4ff
+$color-5: #f6fff8ff
+*
+    font-family: Roboto
+html,body
+    margin: 0
+    padding: 0
+    background: $color-3
+    height: 100%
+a
+    text-decoration: none
+    color: inherit
+.container
+    max-width: 1500px
+    margin: 0 auto
+    position: relative
+nav
+    background-color: $color-1
+    color: $color-4
+    padding: 1rem
+    & >.container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.nav_container
+    display: flex
+    justify-content: space-around
+    align-self: flex-end
+    color: white
+.nav_element
+    font-size: 1.5rem
+    padding: 0 5rem
+    &:not(:first-child)
+        border-left: solid 1px $color-3
+.logo
+    font-size: 2rem
+    font-weight: bold
+    padding: 0 0.5rem
+#refresh
+    border: none
+    font-size: 4rem
+    background: $color-4
+    border-radius: 50%
+    width: 6rem
+    height: 6rem
+    transition: 75ms
+    position: absolute
+    right: 50px
+    bottom: 50px
+    border: 5px solid $color-1
+    position: fixed
+    &:active
+        background: $color-1
+        border: 5px solid $color-4
+.main.container
+    position: relative
+    padding: 1rem
+    background-color: $color-5
+    min-height: 79%
+
+.error_popup
+    text-align: center
+    font-style: italic
+    display: none
+    font-size: 2.5rem
+    &.-active
+        display: block
+.partition
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: $color-3
+    padding: 2rem
+    border-radius: 20px
+    &-header
+        font-size: 2rem
+        font-weight: bold
+        padding: 1rem 0
+        text-decoration: underline
+    &_mini
+        display: flex
+        align-items: center
+        flex-direction: column
+        background-color: $color-4
+        padding: 2rem
+        border-radius: 20px
+        margin: 10px
+
+th:nth-child(even),td:nth-child(even)
+    background-color: rgba(150, 212, 212, 0.4)
+table
+    border: 1px solid $color-3
+    border-right: none
+th, td
+    padding: 2.5px 10px
+
+td:last-child
+    border-top: none
+    border-bottom: none
+    border-left: 1px solid $color-3
+thead
+    font-weight: bold
+    &:first-child
+        &tr:first-child
+            background: black
+
+.grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    gap: 1rem
+
+.-hidden
+    display: none
+
+.prime-key
+    text-decoration: underline
+.banner
+    display: flex
+    justify-content: center
+    font-size: 2rem
+    font-style: italic
+    background-color: $color-2
+    color: $color-5
+    padding: .5rem
+
+form
+    text-align: center
+    display: flex
+    justify-content: center
+
+.search-form
+    margin-bottom:  1rem
+select
+    border: none
+    padding: 0.5rem
+    background-color: $color-4
+    font-size: 1.5rem
+input[type="text"]
+    width: 100%
+
+input[type="submit"]
+    border: none
+    background: $color-4
+    border-left: 1px solid $color-2
+    font-size: 1.5rem
+
+    &:active
+        background-color: $color-3
+.add_btn,.edit_btn,.remove_btn
+    background: none
+    border: none
+    background-color: $color-5
+    &:active
+        background-color: $color-4
+.object_input
+    width: auto
